@@ -10,4 +10,7 @@ public interface ProductService {
 
     Integer createProduct(ProductRequest productRequest);
 
+//    用void是因為沒有返回值
+    void updateProduct(Integer productId,ProductRequest productRequest);
+
 }
