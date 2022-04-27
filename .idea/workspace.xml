@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a023ce3-9cb5-47cb-9781-deffad3a5d9b" name="Changes" comment="初始化SPRINGBOOTS PROJECT">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_28.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingmall/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingmall/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/constant/ProductCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/rawmapper/ProductRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/rawmapper/ProductRowMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650987475133</updated>
-      <workItem from="1650987475564" duration="4021000" />
+      <workItem from="1650987475564" duration="5941000" />
     </task>
     <task id="LOCAL-00001" summary="初始化SPRINGBOOTS PROJECT">
       <created>1650988632537</created>
@@ -71,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650988632537</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="初始化SPRINGBOOTS PROJECT">
+      <created>1651031493724</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651031493724</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
