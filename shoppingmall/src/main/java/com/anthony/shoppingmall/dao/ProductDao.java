@@ -4,7 +4,11 @@ package com.anthony.shoppingmall.dao;
 import com.anthony.shoppingmall.dto.ProductRequest;
 import com.anthony.shoppingmall.model.Product;
 
+import java.util.List;
+
 public interface ProductDao {
+
+    List<Product> getProduct();
 
     Product getProductById(Integer productId);
 

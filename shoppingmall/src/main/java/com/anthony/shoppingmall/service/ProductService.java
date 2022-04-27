@@ -4,7 +4,12 @@ package com.anthony.shoppingmall.service;
 import com.anthony.shoppingmall.dto.ProductRequest;
 import com.anthony.shoppingmall.model.Product;
 
+import java.util.List;
+
 public interface ProductService {
+
+
+    List<Product> getProduct();
 
     Product getProductById(Integer productId);
 

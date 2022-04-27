@@ -10,14 +10,25 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 public class ProductController {
 
-
     @Autowired
     private ProductService productService;
 
+
+//    查詢所有商品
+    @GetMapping( "/products")
+    public ResponseEntity<List<Product>> getProduct(){
+        List<Product> productList=productService.getProduct();
+
+        return ResponseEntity.status(HttpStatus.OK).body(productList);
+    }
+
+
+//    查詢單個商品
     @GetMapping( "/products/{productId}")
     public ResponseEntity<Product> getProduct(@PathVariable Integer productId){
 
@@ -30,6 +41,8 @@ public class ProductController {
         }
     }
 
+
+//    新增產品
     @PostMapping("/products")
     public ResponseEntity<Product> createProduct(@RequestBody @Valid ProductRequest productRequest){
         Integer productId=productService.createProduct(productRequest);
@@ -39,7 +52,7 @@ public class ProductController {
 
     }
 
-
+//    更新產品
     @PutMapping("/products/{productId}")
     public ResponseEntity<Product> updateProduct(@PathVariable Integer productId,
                                                  @RequestBody @Valid ProductRequest productRequest){
@@ -59,7 +72,7 @@ public class ProductController {
         return  ResponseEntity.status(HttpStatus.OK).body(updateProduct);
     }
 
-
+//     刪除產品
     @DeleteMapping("/products/{productId}")
     public  ResponseEntity<?> deleteProduct(@PathVariable Integer productId){
 
