@@ -1,8 +1,9 @@
 package com.anthony.shoppingmall.service.impl;
 
 
-import com.anthony.shoppingmall.constant.ProductCategory;
+
 import com.anthony.shoppingmall.dao.ProductDao;
+import com.anthony.shoppingmall.dto.ProductQueryParams;
 import com.anthony.shoppingmall.dto.ProductRequest;
 import com.anthony.shoppingmall.model.Product;
 import com.anthony.shoppingmall.service.ProductService;
@@ -19,8 +20,8 @@ public class ProductServiceImpl implements ProductService {
 
 
     @Override
-    public List<Product> getProduct(ProductCategory category,String search) {
-        return productDao.getProduct(category,search);
+    public List<Product> getProduct(ProductQueryParams productQueryParams) {
+        return productDao.getProduct(productQueryParams);
     }
 
     @Override

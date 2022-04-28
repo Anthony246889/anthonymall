@@ -2,6 +2,7 @@ package com.anthony.shoppingmall.controller;
 
 
 import com.anthony.shoppingmall.constant.ProductCategory;
+import com.anthony.shoppingmall.dto.ProductQueryParams;
 import com.anthony.shoppingmall.dto.ProductRequest;
 import com.anthony.shoppingmall.model.Product;
 import com.anthony.shoppingmall.service.ProductService;
@@ -28,7 +29,12 @@ public class ProductController {
 //            關鍵字查詢
             @RequestParam(required = false) String search
             ){
-        List<Product> productList=productService.getProduct(category,search);
+
+        ProductQueryParams productQueryParams=new ProductQueryParams();
+        productQueryParams.setCategory(category);
+        productQueryParams.setSearch(search);
+
+        List<Product> productList=productService.getProduct(productQueryParams);
 
         return ResponseEntity.status(HttpStatus.OK).body(productList);
     }

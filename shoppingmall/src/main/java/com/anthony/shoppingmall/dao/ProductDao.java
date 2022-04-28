@@ -2,6 +2,7 @@ package com.anthony.shoppingmall.dao;
 
 
 import com.anthony.shoppingmall.constant.ProductCategory;
+import com.anthony.shoppingmall.dto.ProductQueryParams;
 import com.anthony.shoppingmall.dto.ProductRequest;
 import com.anthony.shoppingmall.model.Product;
 
@@ -9,7 +10,7 @@ import java.util.List;
 
 public interface ProductDao {
 
-    List<Product> getProduct(ProductCategory category,String search);
+    List<Product> getProduct(ProductQueryParams productQueryParams);
 
     Product getProductById(Integer productId);
 
