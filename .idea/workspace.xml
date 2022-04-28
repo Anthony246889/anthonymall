@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a023ce3-9cb5-47cb-9781-deffad3a5d9b" name="Changes" comment="初始化SPRINGBOOTS PROJECT">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6f74de7-2edd-4ecd-b9f3-87cf207e8047.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b6f74de7-2edd-4ecd-b9f3-87cf207e8047.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/dao/ProductDao.java" afterDir="false" />
@@ -27,6 +28,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="28LETTiqjm0Zv2GDJXVf5qCfBxA" />
   <component name="ProjectLevelVcsManager">
@@ -73,7 +82,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650987475133</updated>
-      <workItem from="1650987475564" duration="19750000" />
+      <workItem from="1650987475564" duration="24390000" />
+      <workItem from="1651107401404" duration="553000" />
     </task>
     <task id="LOCAL-00001" summary="初始化SPRINGBOOTS PROJECT">
       <created>1650988632537</created>
@@ -117,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651078415184</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="初始化SPRINGBOOTS PROJECT">
+      <created>1651080076962</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651080076962</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +150,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

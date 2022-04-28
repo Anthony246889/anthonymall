@@ -1,6 +1,7 @@
 package com.anthony.shoppingmall.controller;
 
 
+import com.anthony.shoppingmall.constant.ProductCategory;
 import com.anthony.shoppingmall.dto.ProductRequest;
 import com.anthony.shoppingmall.model.Product;
 import com.anthony.shoppingmall.service.ProductService;
@@ -21,8 +22,13 @@ public class ProductController {
 
 //    查詢所有商品
     @GetMapping( "/products")
-    public ResponseEntity<List<Product>> getProduct(){
-        List<Product> productList=productService.getProduct();
+    public ResponseEntity<List<Product>> getProduct(
+//            分類查詢
+            @RequestParam(required = false) ProductCategory category,
+//            關鍵字查詢
+            @RequestParam(required = false) String search
+            ){
+        List<Product> productList=productService.getProduct(category,search);
 
         return ResponseEntity.status(HttpStatus.OK).body(productList);
     }

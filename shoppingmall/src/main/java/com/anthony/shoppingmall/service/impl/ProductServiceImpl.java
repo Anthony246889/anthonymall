@@ -1,6 +1,7 @@
 package com.anthony.shoppingmall.service.impl;
 
 
+import com.anthony.shoppingmall.constant.ProductCategory;
 import com.anthony.shoppingmall.dao.ProductDao;
 import com.anthony.shoppingmall.dto.ProductRequest;
 import com.anthony.shoppingmall.model.Product;
@@ -18,8 +19,8 @@ public class ProductServiceImpl implements ProductService {
 
 
     @Override
-    public List<Product> getProduct() {
-        return productDao.getProduct();
+    public List<Product> getProduct(ProductCategory category,String search) {
+        return productDao.getProduct(category,search);
     }
 
     @Override

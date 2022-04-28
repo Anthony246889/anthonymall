@@ -1,6 +1,7 @@
 package com.anthony.shoppingmall.service;
 
 
+import com.anthony.shoppingmall.constant.ProductCategory;
 import com.anthony.shoppingmall.dto.ProductRequest;
 import com.anthony.shoppingmall.model.Product;
 
@@ -9,7 +10,7 @@ import java.util.List;
 public interface ProductService {
 
 
-    List<Product> getProduct();
+    List<Product> getProduct(ProductCategory category,String search);
 
     Product getProductById(Integer productId);
 
