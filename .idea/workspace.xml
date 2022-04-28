@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a023ce3-9cb5-47cb-9781-deffad3a5d9b" name="Changes" comment="初始化SPRINGBOOTS PROJECT">
-      <change afterPath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/dto/ProductQueryParams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/dao/impl/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/dao/impl/ProductDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/dto/ProductQueryParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingmall/src/main/java/com/anthony/shoppingmall/dto/ProductQueryParams.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650987475133</updated>
       <workItem from="1650987475564" duration="24390000" />
-      <workItem from="1651107401404" duration="2373000" />
+      <workItem from="1651107401404" duration="5546000" />
     </task>
     <task id="LOCAL-00001" summary="初始化SPRINGBOOTS PROJECT">
       <created>1650988632537</created>
@@ -138,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651107974035</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="初始化SPRINGBOOTS PROJECT">
+      <created>1651112623368</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651112623368</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -27,12 +27,18 @@ public class ProductController {
 //            分類查詢
             @RequestParam(required = false) ProductCategory category,
 //            關鍵字查詢
-            @RequestParam(required = false) String search
+            @RequestParam(required = false) String search,
+//            排序Sorting(根據種類:價格,產生日期等.....)
+            @RequestParam(defaultValue = "created_date") String orderBy,
+//             排序Sorting(升冪降冪)
+            @RequestParam(defaultValue = "desc") String sort
             ){
 
         ProductQueryParams productQueryParams=new ProductQueryParams();
         productQueryParams.setCategory(category);
         productQueryParams.setSearch(search);
+        productQueryParams.setOrderBy(orderBy);
+        productQueryParams.setSort(sort);
 
         List<Product> productList=productService.getProduct(productQueryParams);
 

@@ -37,16 +37,18 @@ public class ProductDaoImpl implements ProductDao {
                 "FROM product WHERE 1=1";
 
         Map<String,Object> map =new HashMap<>();
-
+//            分類查詢條件
         if (productQueryParams.getCategory() != null){
             sql=sql+" AND category= :category";
             map.put("category",productQueryParams.getCategory() .name());
         }
-
+//            關鍵字查詢
         if (productQueryParams.getSearch() != null){
             sql= sql +" AND product_name LIKE  :search";
             map.put("search","%" +productQueryParams.getSearch()+ "%");
         }
+//            排序SQL語句(不用寫IF條件是因為在Controller已經有給上預設值)
+        sql= sql +" ORDER BY "+ productQueryParams.getOrderBy() + " " + productQueryParams.getSort();
 
         List<Product> productList=namedParameterJdbcTemplate.query(sql,map,new ProductRowMapper());
 
